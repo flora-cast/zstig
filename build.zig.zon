@@ -1,0 +1,19 @@
+.{
+    .name = .zstig,
+    .version = "0.1.0",
+    .fingerprint = 0x38dbe4989e6b8274,
+    .minimum_zig_version = "0.15.2",
+    .dependencies = .{
+        .zstd = .{
+            .url = "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz",
+            .hash = "N-V-__8AAPZ7fwBg4JoCzM_0o2A8wxH2hsUUeiU1iuZv53L5",
+            .lazy = true,
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "libs",
+    },
+}
