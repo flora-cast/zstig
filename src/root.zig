@@ -1,6 +1,6 @@
 const std = @import("std");
 const c = @cImport({
-    @cInclude("zstd.h");
+    @cInclude("./zstd.h");
 });
 
 pub fn compress(src: []const u8, allocator: std.mem.Allocator) ![]u8 {
