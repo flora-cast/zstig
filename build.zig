@@ -26,6 +26,7 @@ pub fn build(b: *std.Build) void {
         .target = target,
     });
     mod.linkLibrary(lib);
+    mod.addIncludePath(b.path("src/"));
     b.installArtifact(lib);
 
     const exe = b.addExecutable(.{
