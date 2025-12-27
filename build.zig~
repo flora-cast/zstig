@@ -72,6 +72,6 @@ pub fn build(b: *std.Build) void {
 
 fn buildLibZstd(b: *Build, target: Build.ResolvedTarget, optimize: std.builtin.OptimizeMode, sanitize_c: ?std.zig.SanitizeC) ?*Step.Compile {
     const zstd = @import("libs/zstd.zig").create(b, target, optimize, sanitize_c);
-    const libzstd = zstd;
+    const libzstd = zstd.?;
     return libzstd;
 }
